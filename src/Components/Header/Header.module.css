@@ -1,9 +1,23 @@
-
+.mother{
+        display: flex;
+        z-index: 2;
+        position:fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        background-color: grey;
+        box-shadow: 0px 1px 5px 1px grey;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        /* border-radius: 5px; */
+        padding:5px;
+        /* border:1px solid white */
+}
 .header{
-    /* height:100px; */
+    
     width:100%;
-    /* color:#2bd576 */
-    /* color:#04bf68 */
+    
     color:#053ba6
 }
 .icon{
@@ -36,7 +50,7 @@ button::after{
     display: block;
     height:4px;
     width:100%;
-    background-color: #2bd576;
+    background-color:#053ba6;
     transform:scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;

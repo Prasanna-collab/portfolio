@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import classes from "./Body.module.css";
 import SocialMedia from "../Social Media";
-
+import { contextData } from "../../ContextProvider/ContextProvider";
 const Body = () => {
+  const { data, setData } = useContext(contextData);
+
+  useEffect(() => {
+    const updateMargin = () => {
+      if (window.innerWidth <= 500) {
+        setData((prev) => ({ ...prev, margin: "100px" }));
+      }
+    };
+
+    // window.addEventListener("resize", updateMargin);
+    updateMargin();
+
+    console.log(data);
+    // return () => {
+    //   window.removeEventListener("resize", updateMargin);
+    // };
+  }, [data.width]);
   return (
-    <div>
+    <div className={classes.mother} style={{ marginTop: data.margin }}>
       <div className={classes.heading}>
         <h1>Prasanna Rajendran</h1>
         <h2>Software Developer</h2>
