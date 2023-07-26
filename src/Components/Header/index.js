@@ -44,6 +44,11 @@ const Header = () => {
     setShow((prev) => !prev);
   };
 
+  const handleResume = (event) => {
+    event.preventDefault();
+    window.location.href =
+      "https://drive.google.com/file/d/1gNmrWq9r1iRbzdsASjcZPk4-8vVHc-V-/view?usp=drive_link";
+  };
   return (
     <div className={classes.mother}>
       {/* <Profile /> */}
@@ -69,7 +74,7 @@ const Header = () => {
                 <div className={classes.route}>
                   <button>Experience</button>
 
-                  <button>My resume</button>
+                  <button onClick={handleResume}>My resume</button>
 
                   <button>Contact Me</button>
                 </div>
@@ -82,7 +87,7 @@ const Header = () => {
           <div className={classes.route}>
             <button>Experience</button>
 
-            <button>My resume</button>
+            <button onClick={handleResume}>My resume</button>
 
             <button>Contact Me</button>
           </div>

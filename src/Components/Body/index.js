@@ -16,6 +16,7 @@ const Body = () => {
     updateMargin();
 
     console.log(data);
+    console.log(process.env)
     // return () => {
     //   window.removeEventListener("resize", updateMargin);
     // };
@@ -35,8 +36,9 @@ const Body = () => {
       <div>
         <SocialMedia />
       </div>
+      
     </div>
   );
 };
-
+//
 export default Body;

@@ -4,9 +4,9 @@ import { createContext } from "react";
 export const contextData = createContext({});
 const ContextProvider = (props) => {
   const [data, setData] = useState({
-    margin: "",
+    margin: "100px",
     height: "",
-    width:""
+    width: "",
   });
   return (
     <div>
