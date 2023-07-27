@@ -2,24 +2,23 @@ import React, { useContext, useEffect } from "react";
 import classes from "./Body.module.css";
 import SocialMedia from "../Social Media";
 import { contextData } from "../../ContextProvider/ContextProvider";
+import MyCarousel from "../MyCarousel/index.js";
 const Body = () => {
   const { data, setData } = useContext(contextData);
 
   useEffect(() => {
     const updateMargin = () => {
       if (window.innerWidth <= 500) {
-        setData((prev) => ({ ...prev, margin: "100px" }));
+        setData((prev) => ({ ...prev, margin: "50px" }));
       }
     };
 
     // window.addEventListener("resize", updateMargin);
     updateMargin();
 
-    console.log(data);
-    console.log(process.env)
-    // return () => {
-    //   window.removeEventListener("resize", updateMargin);
-    // };
+    return () => {
+      window.removeEventListener("resize", updateMargin);
+    };
   }, [data.width]);
   return (
     <div className={classes.mother} style={{ marginTop: data.margin }}>
@@ -33,10 +32,14 @@ const Body = () => {
           experiences.
         </span>
       </div>
-      <div>
-        <SocialMedia />
+      <div className={classes["carousel-social"]}>
+        <div>
+          <MyCarousel />
+        </div>
+        <div>
+          <SocialMedia />
+        </div>
       </div>
-      
     </div>
   );
 };

@@ -1,12 +1,13 @@
-.heading, h1, h2{
-    /* color:#2bd576; */
-    /* color:#04bf68 */
-    /* color:#053ba6 */
+.heading, h1, h2, .work{
+   width:95%;
+   margin:10px auto 10px 10px;
     color:#fbeaeb
   }
-  .work{
-    color:white
+  .carousel-social{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
   }
-  /* .mother{
-    margin-top:200px;
-  } */
