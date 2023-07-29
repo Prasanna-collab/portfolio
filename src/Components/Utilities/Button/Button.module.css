@@ -1,0 +1,22 @@
+label{
+    color:#fbeaeb;
+    
+}
+button{
+    width: auto;
+    height: 40px;
+    border: 1px solid white;
+    background-color: #2f3c7e;
+    /* color:white; */
+    color:#fbeaeb;
+
+    font-weight: 550;
+    font-size: medium;
+}
+button:hover{
+    color:#2f3c7e;
+    /* background-color: white; */
+    color:#fbeaeb;
+    border: 1px solid #2f3c7e;
+    transition-delay: 0.2s;
+}

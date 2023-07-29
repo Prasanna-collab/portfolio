@@ -34,7 +34,7 @@
 button{
     position: relative;
     overflow: hidden;
-    padding:10px;
+    padding-bottom:10px;
     color:#053ba6;
     font-size: large;
     /* opacity: 0.5; */

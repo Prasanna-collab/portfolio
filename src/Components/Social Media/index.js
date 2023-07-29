@@ -11,7 +11,7 @@ const SocialMedia = () => {
   const githubUrl = process.env.REACT_APP_GITHUB_URL;
   const instagramUrl = process.env.REACT_APP_INSTA_URL;
   const linkedInUrl = process.env.REACT_APP_LINKEDIN_URL;
-  console.log(githubUrl, instagramUrl, linkedInUrl);
+  // console.log(githubUrl, instagramUrl, linkedInUrl);
   return (
     <div className={classes.container}>
       <a href={githubUrl} target="_blank" rel="noopener noreferrer">

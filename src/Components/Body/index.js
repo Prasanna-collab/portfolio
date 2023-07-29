@@ -3,6 +3,7 @@ import classes from "./Body.module.css";
 import SocialMedia from "../Social Media";
 import { contextData } from "../../ContextProvider/ContextProvider";
 import MyCarousel from "../MyCarousel/index.js";
+import Skills from "../Skills";
 const Body = () => {
   const { data, setData } = useContext(contextData);
 
@@ -35,6 +36,9 @@ const Body = () => {
       <div className={classes["carousel-social"]}>
         <div>
           <MyCarousel />
+        </div>
+        <div>
+          <Skills />
         </div>
         <div>
           <SocialMedia />

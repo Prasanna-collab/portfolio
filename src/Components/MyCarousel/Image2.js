@@ -7,7 +7,7 @@ const Image2 = () => {
       <img
         src={Photo2}
         alt="My Photo"
-        style={{ width: "200px", height: "200px", borderRadius:"5px" }}
+        style={{ width: "250px", height: "250px", borderRadius:"5px",objectFit:"cover" }}
       />
     </>
   );

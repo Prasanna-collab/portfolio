@@ -1,0 +1,46 @@
+.mother{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:10px;
+}
+
+.skillnames{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+    color:#fbeaeb;
+    padding:5px;
+}
+
+.name{
+    padding:5px;
+    border: 1px solid #fbeaeb;
+    border-radius: 5px;
+    background-color: gray;
+}
+h5,h3{
+    color:#fbeaeb
+}
+h3{
+    margin-top:20px;
+}
+.heading{
+    text-align: center;
+}
+.mybtn{
+    position:relative;
+    overflow: hidden;
+    padding:none;
+}
+.mybtn::after{
+    content:"";
+    display: block;
+    height:4px;
+    width:100%;
+    background-color:#fbeaeb;
+    transform:scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
