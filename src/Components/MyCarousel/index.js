@@ -3,12 +3,13 @@ import { Carousel } from "react-bootstrap";
 import Image1 from "./Image1";
 import Image2 from "./Image2";
 import classes from "./MyCarousel.module.css";
+import SocialMedia from "../Social Media";
 
 {
 }
-function MyCarousel() {
+function MyCarousel(props) {
   return (
-    <div className={classes.mother}>
+    <div className={classes.mother} style={{ margin: props.margin }}>
       <Carousel>
         <Carousel.Item>
           <Image1 text="First slide" />
@@ -17,6 +18,9 @@ function MyCarousel() {
           <Image2 text="Second slide" />
         </Carousel.Item>
       </Carousel>
+      <div>
+        <SocialMedia />
+      </div>
     </div>
   );
 }

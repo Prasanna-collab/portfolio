@@ -1,8 +1,14 @@
-.heading, h1, h2, .work{
-   width:95%;
-   margin:10px auto 10px 10px;
-    color:#fbeaeb
+.heading, h1, h2,p{
+  width:95%;
+  margin:10px auto 10px 10px;
+  color:#fbeaeb;
   }
+  .work{
+    width:95%;
+    margin:10px auto 50px 10px;
+    color:#fbeaeb;
+  }
+
   .carousel-social{
     display:flex;
     flex-direction: column;
@@ -10,4 +16,32 @@
     justify-content: center;
     align-content: center;
     margin: 10px;
+  }
+
+  .flex2{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content:center;
+    gap:10px;
+  }
+
+
+
+  @media (min-width:900px){
+    .carousel-social{
+      display:flex;
+      align-items: flex-start;
+      margin:auto;
+    }
+    .flex2{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      /* gap:250px; */
+      width:95%;
+      flex-grow: 1;
+    }
   }

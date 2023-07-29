@@ -1,17 +1,30 @@
 import React from "react";
-import Body from "./Components/Body";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Header from "./Components/Header";
 import ContextProvider from "./ContextProvider/ContextProvider";
+import ContactPage from "./Components/ContactPage";
+import Projects from "./Components/Projects";
+import Experience from "./Components/Experience";
+import Header from "./Components/Header";
+import Body from "./Components/Body";
+
+
+
 const App = () => {
   return (
-    <ContextProvider>
-      <header>
-        <Header />
-      </header>
-
-      <Body />
-    </ContextProvider>
+    <Router>
+      <ContextProvider>
+        <header>
+          <Header />
+        </header>
+        <Routes>
+          <Route path="/" element={<Body />} />
+          <Route path="/contact-me" element={<ContactPage />} />
+          <Route path="/my-experience" element={<Experience />} />
+          <Route path="/my-projects" element={<Projects />} />
+        </Routes>
+      </ContextProvider>
+    </Router>
   );
 };
 
