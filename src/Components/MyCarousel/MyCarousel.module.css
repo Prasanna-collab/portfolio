@@ -1,12 +1,12 @@
 .mother{
     height:300px;
     width:300px;
-    display: flex;
+    /* display: flex; */
     /* gap:10px; */
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-    align-content: center;
+    /* flex-direction: column; */
+    /* align-items: stretch; */
+    /* justify-content: center; */
+    /* align-content: center; */
 }
 .carousel-indicators {
     display: none;

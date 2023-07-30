@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Projects.module.css";
+import { contextData } from "../../ContextProvider/ContextProvider";
 
 const Projects = () => {
-  return <div>Projects Will Be Added Here Soon!</div>;
+  const { data } = useContext(contextData);
+  return (
+    <div style={{ marginTop: data.margin }}>Projects Will Be Added Here Soon!</div>
+  );
 };
 
 export default Projects;

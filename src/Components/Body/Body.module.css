@@ -1,12 +1,14 @@
 .heading, h1, h2,p{
   width:95%;
-  margin:10px auto 10px 10px;
+  margin:0px auto 10px 0px;
+  margin-left:5px;
   color:#fbeaeb;
   }
   .work{
     width:95%;
     margin:10px auto 50px 10px;
     color:#fbeaeb;
+    text-align: justify;
   }
 
   .carousel-social{

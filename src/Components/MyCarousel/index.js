@@ -3,7 +3,6 @@ import { Carousel } from "react-bootstrap";
 import Image1 from "./Image1";
 import Image2 from "./Image2";
 import classes from "./MyCarousel.module.css";
-import SocialMedia from "../Social Media";
 
 {
 }
@@ -18,9 +17,7 @@ function MyCarousel(props) {
           <Image2 text="Second slide" />
         </Carousel.Item>
       </Carousel>
-      <div>
-        <SocialMedia />
-      </div>
+      
     </div>
   );
 }

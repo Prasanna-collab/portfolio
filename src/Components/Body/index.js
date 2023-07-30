@@ -5,6 +5,7 @@ import { contextData } from "../../ContextProvider/ContextProvider";
 import MyCarousel from "../MyCarousel/index.js";
 import Skills from "../Skills";
 import Emoji from "react-emoji";
+
 const Body = () => {
   const { data, setData } = useContext(contextData);
 
@@ -24,14 +25,19 @@ const Body = () => {
   }, [data.width]);
   return (
     <div className={classes.mother} style={{ marginTop: data.margin }}>
-      <h1>Hello, World!{Emoji.emojify(":smiley:")}</h1>
-      <h1> Welcome to my Portfolio</h1>
+      <div style={{ margin: "10px auto 10px 5px", textAlign: "left" }}>
+        <h1>
+          Hello, World! Welcome to My Portfolio!! {Emoji.emojify(":smiley:")}
+        </h1>
+      </div>
+
       <div className={classes.flex2}>
         <div
           style={{
             display: "flex",
             flexDirection: "column",
-            alignItems: "flex-start",
+            alignItems: "stretch",
+            // margin: "10px auto 10px 10px",
           }}
         >
           <div className={classes.heading}>
@@ -41,10 +47,13 @@ const Body = () => {
           <div className={classes.work}>
             <>
               I like to craft and scalable front end products with great user
-              experiences.Here, you'll find a collection of projects,
+              experiences. Here, you'll find a collection of projects,
               experiences, and skills that define my proficiency in crafting
               innovative solutions.
             </>
+          </div>
+          <div>
+            <SocialMedia />
           </div>
         </div>
         <div>
