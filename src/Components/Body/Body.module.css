@@ -14,10 +14,9 @@
   .carousel-social{
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    align-content: center;
-    margin: 10px;
+    margin: 10px ;
   }
 
   .flex2{
@@ -36,6 +35,7 @@
       display:flex;
       align-items: flex-start;
       margin:auto;
+      /* margin-bottom: 200px; */
     }
     .flex2{
       display: flex;

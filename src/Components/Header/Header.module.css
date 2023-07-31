@@ -7,9 +7,9 @@
         left: 0px;
         background-color: #fbeaeb;
         box-shadow: 0px 1px 5px 1px grey;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
-        align-content: center;
+       
         /* border-radius: 5px; */
         padding:5px;
         /* border:1px solid white */

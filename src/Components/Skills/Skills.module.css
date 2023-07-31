@@ -4,6 +4,7 @@
     align-items: flex-start;
     justify-content: center;
     gap:10px;
+    margin-left:10px;
 }
 
 .skillnames{
@@ -11,7 +12,7 @@
     flex-wrap: wrap;
     gap:5px;
     color:#fbeaeb;
-    padding:5px;
+    /* padding:5px; */
 }
 
 .name{
@@ -21,7 +22,11 @@
     background-color: gray;
 }
 h5,h3{
-    color:#fbeaeb
+    color:#fbeaeb;
+}
+h3{
+    margin-left:10px
+
 }
 .heading{
     text-align: left;

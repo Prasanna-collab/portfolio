@@ -2,5 +2,18 @@
 body {
     font-family: 'Nunito', serif;
     background-color: #2f3c7e;
-    -webkit-scrollbar-color: yellow;
+    
 }
+/* Setting the thumb color to yellow and the track color to light gray */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #fbeaeb;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #2f3c7e;
+  }
+  

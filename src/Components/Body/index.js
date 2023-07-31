@@ -5,6 +5,7 @@ import { contextData } from "../../ContextProvider/ContextProvider";
 import MyCarousel from "../MyCarousel/index.js";
 import Skills from "../Skills";
 import Emoji from "react-emoji";
+import Footer from "../Footer";
 
 const Body = () => {
   const { data, setData } = useContext(contextData);
@@ -66,6 +67,9 @@ const Body = () => {
           <Skills />
         </div>
       </div>
+      {/* <div>
+        <Footer/>
+      </div> */}
     </div>
   );
 };

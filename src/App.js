@@ -22,9 +22,9 @@ const App = () => {
           <Route path="/my-experience" element={<Experience />} />
           <Route path="/my-projects" element={<Projects />} />
         </Routes>
-        <footer>
+        {/* <footer>
           <Footer />
-        </footer>
+        </footer> */}
       </ContextProvider>
     </Router>
   );

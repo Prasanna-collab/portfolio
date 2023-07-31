@@ -1,11 +1,21 @@
 .footer{
     display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
     background-color: #fbeaeb;
-    height:30px;
-    width:100%;
-    position: fixed;
-    bottom:0px;
-    right:0px;
-    left:0px;
+    /* height: 60px; */
+    width: 100%;
+    color: #2f3c7e;
+    align-content: center;
+    flex-direction: column;
+   
     
+}
+
+.name{
+    margin-left:10px;
+}
+.terms{
+    margin:auto;
 }
