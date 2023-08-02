@@ -8,14 +8,23 @@
     width: 100%;
     color: #2f3c7e;
     align-content: center;
-    flex-direction: column;
-   
-    
+    flex-direction: column;  
 }
 
 .name{
     margin-left:10px;
 }
 .terms{
-    margin:auto;
+    text-align: center;
+}
+
+@media (min-width:650px){
+    .footer{
+        display:flex;  
+        flex-direction: row;
+        justify-content: space-evenly;
+  
+    }
+   
+   
 }

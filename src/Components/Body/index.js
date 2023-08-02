@@ -6,8 +6,11 @@ import MyCarousel from "../MyCarousel/index.js";
 import Skills from "../Skills";
 import Emoji from "react-emoji";
 import Footer from "../Footer";
+import { Link, useNavigate } from "react-router-dom";
+import Click from "../../assets/Icons/clickme.png";
 
 const Body = () => {
+  const navigate = useNavigate();
   const { data, setData } = useContext(contextData);
 
   useEffect(() => {
@@ -24,6 +27,10 @@ const Body = () => {
       window.removeEventListener("resize", updateMargin);
     };
   }, [data.width]);
+  const handleGoProjects = (event) => {
+    event.preventDefault();
+    navigate("/my-projects");
+  };
   return (
     <div className={classes.mother} style={{ marginTop: data.margin }}>
       <div style={{ margin: "10px auto 10px 5px", textAlign: "left" }}>
@@ -43,16 +50,27 @@ const Body = () => {
         >
           <div className={classes.heading}>
             <h1>I am Prasanna</h1>
-            <h2>Software Developer {Emoji.emojify(":computer:")}</h2>
+            <h2>
+              Software Developer{" "}
+              <Link to={"my-projects"}>
+                <img
+                  src={Click}
+                  alt="click-me"
+                  style={{ width: "50px", height: "50px" }}
+                />
+              </Link>
+            </h2>{" "}
+            <div style={{ marginLeft: "10px" }}></div>
           </div>
           <div className={classes.work}>
             <>
               I like to craft and scalable front end products with great user
               experiences. Here, you'll find a collection of projects,
               experiences, and skills that define my proficiency in crafting
-              innovative solutions.
+              innovative solutions.{" "}
             </>
           </div>
+
           <div>
             <SocialMedia />
           </div>
@@ -67,9 +85,9 @@ const Body = () => {
           <Skills />
         </div>
       </div>
-      {/* <div>
-        <Footer/>
-      </div> */}
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };

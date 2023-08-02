@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import classes from "./Header.module.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Profile from "../Profile";
 import { contextData } from "../../ContextProvider/ContextProvider";
 
@@ -72,11 +72,14 @@ const Header = () => {
                   className={classes.icon}
                 />
                 <div className={classes.route}>
-                  <button>Experience</button>
+                  <Link to={"my-experience"}>
+                    <button>Experience</button>
+                  </Link>
 
                   <button onClick={handleResume}>My resume</button>
-
-                  <button>Contact Me</button>
+                  <Link to={"contact-me"}>
+                    <button>Contact Me</button>
+                  </Link>
                 </div>
               </>
             )}
@@ -85,11 +88,14 @@ const Header = () => {
       ) : (
         <div>
           <div className={classes.route}>
-            <button>Experience</button>
+            <Link to={"my-experience"}>
+              <button>Experience</button>
+            </Link>
 
             <button onClick={handleResume}>My resume</button>
-
-            <button>Contact Me</button>
+            <Link to={"contact-me"}>
+              <button>Contact Me</button>
+            </Link>
           </div>
         </div>
       )}
