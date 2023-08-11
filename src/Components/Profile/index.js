@@ -1,9 +1,13 @@
 import React from "react";
 import classes from "./Profile.module.css";
-
+import logo from "../../assets/Icons/logo.png";
 
 const Profile = () => {
-  return <div className={classes.sign}>Prasanna</div>;
+  return (
+    <div>
+      <img src={logo} alt="logo" className={classes.sign} />
+    </div>
+  );
 };
 
 export default Profile;

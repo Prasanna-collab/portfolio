@@ -51,7 +51,7 @@ const Header = () => {
   };
   return (
     <div className={classes.mother}>
-      {/* <Profile /> */}
+      {show ? <Profile /> : ""}
       {state.width <= 500 ? (
         <>
           <div style={{ textAlign: "right" }} className={classes.header}>
@@ -72,6 +72,9 @@ const Header = () => {
                   className={classes.icon}
                 />
                 <div className={classes.route}>
+                  <Link to={"/"}>
+                    <button>Home</button>
+                  </Link>
                   <Link to={"my-experience"}>
                     <button>Experience</button>
                   </Link>
@@ -88,6 +91,9 @@ const Header = () => {
       ) : (
         <div>
           <div className={classes.route}>
+            <Link to={"/"}>
+              <button>Home</button>
+            </Link>
             <Link to={"my-experience"}>
               <button>Experience</button>
             </Link>

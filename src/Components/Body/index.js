@@ -8,6 +8,8 @@ import Emoji from "react-emoji";
 import Footer from "../Footer";
 import { Link, useNavigate } from "react-router-dom";
 import Click from "../../assets/Icons/clickme.png";
+import Tools from "../Tools";
+import Projects from "../Projects";
 
 const Body = () => {
   const navigate = useNavigate();
@@ -79,12 +81,20 @@ const Body = () => {
           <MyCarousel margin={data.margin} />
         </div>
       </div>
-
-      <div className={classes["carousel-social"]}>
+      <div className={classes.projectskilltool}>
+        <div className={classes["carousel-social"]}>
+          <div>
+            <Skills />
+          </div>
+          <div>
+            <Tools />
+          </div>
+        </div>
         <div>
-          <Skills />
+          <Projects />
         </div>
       </div>
+
       <div>
         <Footer />
       </div>
