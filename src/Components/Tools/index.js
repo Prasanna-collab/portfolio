@@ -142,7 +142,7 @@ const Tools = () => {
             </svg>
           </div>
 
-          <div className={classes.name}>Visual Studio Code</div>
+          <div className={classes.name}>Postman</div>
         </div>
         <div className={classes.icons}>
           <svg
@@ -157,7 +157,7 @@ const Tools = () => {
               // style="fill:#007acc"
             />
           </svg>
-          <div className={classes.name}>Postman</div>
+          <div className={classes.name}>Visual Studio Code</div>
         </div>
       </div>
     </div>
