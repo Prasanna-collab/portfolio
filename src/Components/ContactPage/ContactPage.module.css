@@ -3,7 +3,7 @@
     flex-direction: column;
     gap:20px;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     margin-left:10px;
     padding:5px;
     height: auto;
@@ -23,6 +23,8 @@
     display:flex;
     justify-content: flex-start;
     gap:20px;
+    border-left: 1px solid #faeabe;
+    padding:10px;
 
 }
 input{
@@ -37,7 +39,8 @@ input{
 
 .container{
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
+    gap:20px;
     color:#ffffff;
     background-color: transparent;
     width:95%;

@@ -38,22 +38,22 @@ const ContactPage = () => {
         <div className={classes.card}>
           <div className={classes.child}>
             <img
-              src={phone}
-              alt="arrow-down"
-              style={{ width: "30px", height: "30px" }}
-            />
-            <h4>+91 6380719807</h4>
-          </div>
-          <div className={classes.child}>
-            <img
               src={email}
               alt="arrow-down"
               style={{ width: "30px", height: "30px" }}
             />
             <h4>raprasannaanbu@gmail.com</h4>
           </div>
+          <div className={classes.child}>
+            <img
+              src={phone}
+              alt="arrow-down"
+              style={{ width: "30px", height: "30px" }}
+            />
+            <h4>+91 6380719807</h4>
+          </div>
         </div>
-        <div style={{ margin:'auto'}}>
+        <div style={{ margin: "auto" }}>
           <form
             method="POST"
             action="mailto: raprasannaanbu@gmail.com"

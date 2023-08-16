@@ -1,11 +1,51 @@
 import React, { useContext } from "react";
 import { contextData } from "../../ContextProvider/ContextProvider";
+import classes from "./Experience.module.css";
+import rela from "../../assets/Icons/logo_in-01.png";
+import Certifications from "../Cerftifications";
 
 const Experience = () => {
   const { data } = useContext(contextData);
   return (
     <div style={{ marginTop: data.margin, color: "#fbeaeb" }}>
-      Details will be added soon!
+      <h3 style={{ color: "#faeaeb" }} className={classes.heading}>
+        MY EXPERIENCE
+      </h3>
+      <h3 style={{ borderTop: "1px solid white", width: "70px" }}></h3>
+      <div className={classes.column}>
+        <div className={classes.experience}>
+          <div className={classes.myexp}>
+            <div className={classes.logo}>
+              <img
+                src={rela}
+                alt="rela-hospital"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  borderRadius: "20px",
+                }}
+              />
+            </div>
+
+            <div className={classes.role}>
+              <h4 style={{ color: "#053ba6" }}>Software Developer</h4>
+              <h4 style={{ color: "#053ba6" }}>Rela Hospital</h4>
+              <h6>February 2023 - Present * Full Time</h6>
+            </div>
+            <div className={classes.role}>
+              <h3 style={{ color: "#053ba6" }}>Software Developer Trainee</h3>
+              <h3 style={{ color: "#053ba6" }}>Rela Hospital</h3>
+              <h6>October 2022 - January 2023 * Full Time</h6>
+            </div>
+          </div>
+        </div>
+        {/* bootstrap grid viewer */}
+        <div className={classes.certifications}>
+          <div>
+            <Certifications />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
