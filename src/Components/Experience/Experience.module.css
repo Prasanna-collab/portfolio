@@ -4,25 +4,21 @@
     justify-content: center;
     align-items: center;
     gap:20px;
-
 }
 .experience{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
 }
 .logo{
     width:75px;
     height:auto;
     border-radius: 20px;
     box-shadow: 1px 2px 15px 0.4px#053ba6;
-
 }
 .heading{
     text-align: left;
-    /* border-bottom: 1px solid white; */
     width:220px;
 }
 
@@ -49,3 +45,25 @@ h3{
     width: auto;
     
 }
+.certifications{
+    margin-top: 20px;
+}
+
+
+@media (min-width:900px){
+    .myexp{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;   
+    }
+    .column{
+        flex-direction: row;
+    }
+    .experience{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+  }

@@ -1,5 +1,25 @@
 .heading{
     text-align: left;
-    /* border-bottom: 1px solid white; */
     width:auto;
 }
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.grid-item {
+    border-radius: 10px;
+    background-color: #faeaeb;
+    color:#053ba6;
+    height:80px;
+    width:125px;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 1px 1px 3px 1px#faeaeb;
+
+  }
+  

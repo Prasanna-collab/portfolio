@@ -9,7 +9,7 @@ const Experience = () => {
   return (
     <div style={{ marginTop: data.margin, color: "#fbeaeb" }}>
       <h3 style={{ color: "#faeaeb" }} className={classes.heading}>
-        MY EXPERIENCE
+        Experience
       </h3>
       <h3 style={{ borderTop: "1px solid white", width: "70px" }}></h3>
       <div className={classes.column}>
@@ -33,17 +33,17 @@ const Experience = () => {
               <h6>February 2023 - Present * Full Time</h6>
             </div>
             <div className={classes.role}>
-              <h3 style={{ color: "#053ba6" }}>Software Developer Trainee</h3>
-              <h3 style={{ color: "#053ba6" }}>Rela Hospital</h3>
+              <h4 style={{ color: "#053ba6" }}>Software Developer Trainee</h4>
+              <h4 style={{ color: "#053ba6" }}>Rela Hospital</h4>
               <h6>October 2022 - January 2023 * Full Time</h6>
             </div>
           </div>
         </div>
         {/* bootstrap grid viewer */}
-        <div className={classes.certifications}>
-          <div>
-            <Certifications />
-          </div>
+      </div>
+      <div className={classes.certifications}>
+        <div>
+          <Certifications />
         </div>
       </div>
     </div>
