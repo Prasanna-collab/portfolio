@@ -9,6 +9,7 @@
     color: #2f3c7e;
     align-content: center;
     flex-direction: column;  
+    margin-top: 20px;
 }
 
 .name{

@@ -35,23 +35,14 @@ const Body = () => {
   };
   return (
     <div className={classes.mother} style={{ marginTop: data.margin }}>
-      <div style={{ margin: "10px auto 10px 5px", textAlign: "left" }}>
-        <h1>
-          Hello, World! Welcome to My Portfolio!! {Emoji.emojify(":smiley:")}
-        </h1>
-      </div>
-
       <div className={classes.flex2}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "stretch",
-            // margin: "10px auto 10px 10px",
-          }}
-        >
+        <div className={classes.flex3}>
           <div className={classes.heading}>
-            <h1>I am Prasanna</h1>
+            <h1>
+              Hello, World{" ! "}
+              {/* {Emoji.emojify(":smiley:")} */}
+            </h1>
+            <h1>I am <span style={{color:"#dc3545"}}>Prasanna</span></h1>
             <h2>
               Software Developer{" "}
               <Link to={"my-projects"}>
@@ -62,23 +53,21 @@ const Body = () => {
                 />
               </Link>
             </h2>{" "}
-            <div style={{ marginLeft: "10px" }}></div>
+            <div style={{ marginLeft: "" }}></div>
           </div>
           <div className={classes.work}>
-            <>
-              I like to craft and scalable front end products with great user
-              experiences. Here, you'll find a collection of projects,
-              experiences, and skills that define my proficiency in crafting
-              innovative solutions.{" "}
-            </>
+            I like to craft and scalable front end products with great user
+            experiences. Here, you'll find a collection of projects,
+            experiences, and skills that define my proficiency in crafting
+            innovative solutions.
           </div>
 
-          <div>
+          <div className={classes.none}>
             <SocialMedia />
           </div>
         </div>
         <div>
-          <MyCarousel margin={data.margin} />
+          <MyCarousel />
         </div>
       </div>
       <div className={classes.projectskilltool}>

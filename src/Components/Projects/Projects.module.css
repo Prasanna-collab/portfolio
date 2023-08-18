@@ -4,11 +4,12 @@
     align-items: flex-start;
     justify-content: center; */
     /* gap:10px; */
-    margin-left:10px;
+    margin-left:5px;
 }
 
 .heading{
     text-align: left;
     border-bottom: 1px solid white;
-    width:70px;
+    width:95%;
+    margin:0px auto 10px 5px;
 }

@@ -1,12 +1,13 @@
 .heading, h1, h2,p{
   width:95%;
-  margin:0px auto 10px 0px;
-  margin-left:5px;
+  margin:0px auto 10px 5px;
+  /* margin-left:5px; */
   color:#fbeaeb;
   }
   .work{
     width:95%;
-    margin:10px auto 50px 10px;
+    margin:0px auto;
+    /* margin-left: 20px; */
     color:#fbeaeb;
     text-align: justify;
   }
@@ -16,7 +17,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 10px ;
+    /* margin: 10px; */
     gap:20px;
   }
 
@@ -28,6 +29,14 @@
     align-content:center;
     gap:10px;
   }
+  .flex3{
+    
+      display: flex;
+      flex-direction: column;
+      height:300px;
+      justify-content:center;
+    
+  }
   .projectskilltool{
     display:flex;
     flex-direction: column-reverse;
@@ -35,14 +44,16 @@
    /* flex-direction: column-reverse; */
   
   }
-
+.none{
+  display: none;
+}
 
   @media (min-width:900px){
     .carousel-social{
       display:flex;
       align-items: flex-start;
       /* border-right:0.5px solid #fbeaeb; */
-      padding-right:30px;
+      /* padding-right:30px; */
       /* margin:auto; */
       /* margin-bottom: 200px; */
     }
@@ -51,8 +62,10 @@
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
+      margin-top: 100px;
       /* gap:250px; */
       width:95%;
+      /* height:400px; */
       flex-grow: 1;
     }
     .projectskilltool{
@@ -64,4 +77,20 @@
      /* flex-direction: column-reverse; */
     
     }
+    .work{
+      width:95%;
+      margin:0px 30px;
+      margin-left: 10px;
+      color:#fbeaeb;
+      text-align: justify;
+    }
+    .flex3{
+      display: flex;
+      flex-direction: column;
+      height:400px;
+      /* align-items:; */
+  }
+  .none{
+    display:block;
+  }
   }

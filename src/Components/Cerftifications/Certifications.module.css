@@ -16,10 +16,25 @@
     background-color: #faeaeb;
     color:#053ba6;
     height:80px;
-    width:125px;
+    width:150px;
     font-size: 18px;
     text-align: center;
     box-shadow: 1px 1px 3px 1px#faeaeb;
 
   }
-  
+  @media (min-width:900px){
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .grid-item {
+        border-radius: 10px;
+        background-color: #faeaeb;
+        color:#053ba6;
+        height:80px;
+        width:175px;
+        font-size: 18px;
+        text-align: center;
+        box-shadow: 1px 1px 3px 1px#faeaeb;
+      }
+  }

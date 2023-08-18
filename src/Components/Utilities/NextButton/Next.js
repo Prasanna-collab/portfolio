@@ -3,7 +3,8 @@ import nextButton from "../../../assets/Icons/next.png";
 
 const Next = () => {
   return (
-    <div>
+    <div style={{color:"#053ba6", fontWeight:"200", fontSize:"small"}}>
+      View Certificate{"  "}
       <img
         src={nextButton}
         alt="Next"

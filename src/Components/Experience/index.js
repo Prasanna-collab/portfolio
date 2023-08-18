@@ -3,6 +3,7 @@ import { contextData } from "../../ContextProvider/ContextProvider";
 import classes from "./Experience.module.css";
 import rela from "../../assets/Icons/logo_in-01.png";
 import Certifications from "../Cerftifications";
+import Footer from "../Footer";
 
 const Experience = () => {
   const { data } = useContext(contextData);
@@ -13,20 +14,19 @@ const Experience = () => {
       </h3>
       <h3 style={{ borderTop: "1px solid white", width: "70px" }}></h3>
       <div className={classes.column}>
-        <div className={classes.experience}>
-          <div className={classes.myexp}>
-            <div className={classes.logo}>
-              <img
-                src={rela}
-                alt="rela-hospital"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  borderRadius: "20px",
-                }}
-              />
-            </div>
-
+        <div className={classes.myexp}>
+          <div className={classes.logo}>
+            <img
+              src={rela}
+              alt="rela-hospital"
+              style={{
+                width: "100%",
+                height: "auto",
+                borderRadius: "20px",
+              }}
+            />
+          </div>
+          <div className={classes.experience}>
             <div className={classes.role}>
               <h4 style={{ color: "#053ba6" }}>Software Developer</h4>
               <h4 style={{ color: "#053ba6" }}>Rela Hospital</h4>
@@ -39,12 +39,14 @@ const Experience = () => {
             </div>
           </div>
         </div>
-        {/* bootstrap grid viewer */}
       </div>
       <div className={classes.certifications}>
         <div>
           <Certifications />
         </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

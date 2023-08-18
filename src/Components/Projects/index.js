@@ -11,7 +11,7 @@ const Projects = () => {
     >
       <h3 className={classes.heading}>PROJECTS</h3>
 
-      <div style={{ marginLeft: "15px" }}>
+      <div style={{ marginLeft: "10px" }}>
         <h5>Projects Will Be Added Here Soon!</h5>{" "}
       </div>
     </div>

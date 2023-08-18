@@ -1,11 +1,11 @@
 .container{
     display: flex;
     align-items: flex-start;
-    justify-content:center;
+    /* justify-content:center; */
     color:#ffffff;
     background-color: transparent;
     gap:calc(100%/3);
-    margin: 10px 10px 10px 10px;
+    margin: 10px 0px 0px 10px;
     font-size: xx-large;
     /* border:1px solid black; */
     border-radius: 5px;   
