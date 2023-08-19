@@ -40,7 +40,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-      <div className={classes.certifications}>
+      <div className={classes.certifications} style={{marginBottom:'20px'}}>
         <div>
           <Certifications />
         </div>
