@@ -42,7 +42,9 @@ const Body = () => {
               Hello, World{" ! "}
               {/* {Emoji.emojify(":smiley:")} */}
             </h1>
-            <h1>I am <span style={{color:"#dc3545"}}>Prasanna</span></h1>
+            <h1>
+              I am <span style={{ color: "#dc3545" }}>Prasanna</span>
+            </h1>
             <h2>
               Software Developer{" "}
               <Link to={"my-projects"}>
