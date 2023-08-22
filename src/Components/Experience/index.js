@@ -30,23 +30,29 @@ const Experience = () => {
             <div className={classes.role}>
               <h4 style={{ color: "#053ba6" }}>Software Developer</h4>
               <h4 style={{ color: "#053ba6" }}>Rela Hospital</h4>
-              <h6>February 2023 - Present * Full Time</h6>
+              <h6>October 2022 - Present * Full Time</h6>
             </div>
-            <div className={classes.role}>
+            {/* <div className={classes.role}>
               <h4 style={{ color: "#053ba6" }}>Software Developer Trainee</h4>
               <h4 style={{ color: "#053ba6" }}>Rela Hospital</h4>
               <h6>October 2022 - January 2023 * Full Time</h6>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
-      <div className={classes.certifications} style={{marginBottom:'20px'}}>
+      <div className={classes.certifications} style={{ marginBottom: "150px" }}>
         <div>
           <Certifications />
         </div>
       </div>
       <div
-        style={{ position: "fixed", bottom: "0px", left: "0px", right: "0px" }}
+        style={{
+          position: "fixed",
+          bottom: "0px",
+          left: "0px",
+          right: "0px",
+          // marginTop: "20px",
+        }}
       >
         <Footer />
       </div>
