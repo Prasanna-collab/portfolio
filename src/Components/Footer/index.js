@@ -8,8 +8,8 @@ const Footer = () => {
       <div className={classes.profile}>
         <div className={classes.logo}></div>
         <div className={classes.name}>
-          <img src={Logo} alt='My Logo' style={{width:"60px", height:"60px"}}/>
-          Prasanna R
+          <img src={Logo} alt='My Logo' style={{width:"40px", height:"40px", borderRadius:"50%",}}/>
+          {"   "}Prasanna R
         </div>
       </div>
       <div className={classes.terms}>
