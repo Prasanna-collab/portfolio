@@ -20,7 +20,9 @@
     border: 1px solid #fbeaeb;
     border-radius: 5px;
     background-color:#fbeaeb;
-    color:#2f3c7e
+    /* color:#2f3c7e */
+    /* color: #fbeaeb; */
+    color:#202124;
 }
 h5,h3{
     color:#fbeaeb;

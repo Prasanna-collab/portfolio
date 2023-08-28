@@ -28,8 +28,8 @@ const Experience = () => {
           </div>
           <div className={classes.experience}>
             <div className={classes.role}>
-              <h4 style={{ color: "#053ba6" }}>Software Developer</h4>
-              <h4 style={{ color: "#053ba6" }}>Rela Hospital</h4>
+              <h4 style={{ color: "#202124" }}>Software Developer</h4>
+              <h4 style={{ color: "#202124" }}>Rela Hospital</h4>
               <h6>October 2022 - Present * Full Time</h6>
             </div>
             {/* <div className={classes.role}>

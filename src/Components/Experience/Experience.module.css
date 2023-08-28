@@ -31,13 +31,13 @@
     border:2px solid #faeaeb;
     border-radius: 20px;
     background-color: #faeaeb;
-    color:#053ba6;
+    color:#202124;
     gap:10px;
     box-shadow: 1px 1px 3px 1px#faeaeb;
     margin:auto;
 }
 h3{
-    color:#053ba6;
+    color:#202124;
 
 }
 .role{
@@ -60,7 +60,7 @@ h3{
         border:2px solid #faeaeb;
         border-radius: 20px;
         background-color: #faeaeb;
-        color:#053ba6;
+        color:#202124;
         gap:10px;
         box-shadow: 1px 1px 3px 1px#faeaeb;
         margin:auto;

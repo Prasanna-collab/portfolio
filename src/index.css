@@ -1,7 +1,9 @@
 
 body {
     font-family: 'Nunito', serif;
-    background-color: #2f3c7e;
+    /* background-color: #2f3c7e; */
+    /* background-color:#3c4043; */
+    background-color: #202124;
     
 }
 /* Setting the thumb color to yellow and the track color to light gray */
@@ -14,6 +16,7 @@ body {
   }
   
   ::-webkit-scrollbar-track {
-    background-color: #2f3c7e;
+    /* background-color: #2f3c7e; */
+    background-color: #202124;
   }
   

@@ -5,11 +5,11 @@ label{
 button{
     width: auto;
     height: 40px;
-    color:#2f3c7e;
+    color:#202124;
     font-weight: 550;
     font-size: medium;
 }
 button:hover{
-    color:#2f3c7e;
+    color:#202124;
     transition-delay: 0.2s;
 }
