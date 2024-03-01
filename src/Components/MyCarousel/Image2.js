@@ -7,8 +7,8 @@ const Image2 = () => {
     <>
       <img
         src={Photo2}
-        className="image2"
-        alt="My Photo"
+        className="me2"
+        alt="Me2"
       />
     </>
   );

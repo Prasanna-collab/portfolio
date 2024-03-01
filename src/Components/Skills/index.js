@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <>
       <div>
-        <h3 className={classes.heading}>SKILLS</h3>
+        <h3 className={classes.heading} style={{borderBottom:"1px solid white"}}>SKILLS</h3>
         <div className={classes.mother}>
           <div className={classes.children}>
             <button className={classes.mybtn}>

@@ -7,8 +7,7 @@ import { Link } from "react-router-dom";
 const Certifications = () => {
   return (
     <div>
-      <h3 className={classes.heading}>Certifications </h3>
-      <h3 style={{ borderTop: "1px solid white", width: "70px" }}></h3>
+      <h3 className={classes.heading} style={{borderBottom: "1px solid white"}}>Certifications </h3>
       <div className={classes.grid}>
         <div className={classes["grid-item"]}>
           <span style={{ color: "#202124" }}>HTML, CSS, JavaScript</span>

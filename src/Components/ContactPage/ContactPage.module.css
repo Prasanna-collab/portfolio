@@ -51,7 +51,10 @@ input{
 .heading{
     text-align: left;
     /* border-bottom: 1px solid white; */
-    width:220px;
+/* width:220px; */
+}
+h3{
+    width: max-content;
 }
 
 

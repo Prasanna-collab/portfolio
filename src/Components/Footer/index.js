@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import classes from "./Footer.module.css";
 import Logo from '../../assets/Icons/logo.png';
 
@@ -13,7 +13,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={classes.terms}>
-        Copyright © 2023 Prasanna. All Rights Reserved.
+        Copyright © 2024 Prasanna. All Rights Reserved.
       </div>
     </div>
   );

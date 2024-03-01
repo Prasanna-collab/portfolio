@@ -4,15 +4,14 @@ import SocialMedia from "../Social Media";
 import { contextData } from "../../ContextProvider/ContextProvider";
 import MyCarousel from "../MyCarousel/index.js";
 import Skills from "../Skills";
-import Emoji from "react-emoji";
 import Footer from "../Footer";
-import { Link, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 import Click from "../../assets/Icons/clickme.png";
 import Tools from "../Tools";
 import Projects from "../Projects";
 
 const Body = () => {
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
   const { data, setData } = useContext(contextData);
 
   useEffect(() => {
@@ -28,11 +27,12 @@ const Body = () => {
     return () => {
       window.removeEventListener("resize", updateMargin);
     };
+    // eslint-disable-next-line
   }, [data.width]);
-  const handleGoProjects = (event) => {
-    event.preventDefault();
-    navigate("/my-projects");
-  };
+  // const handleGoProjects = (event) => {
+  //   event.preventDefault();
+  //   navigate("/my-projects");
+  // };
   return (
     <div className={classes.mother} style={{ marginTop: data.margin }}>
       <div className={classes.flex2}>

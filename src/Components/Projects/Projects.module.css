@@ -9,7 +9,10 @@
 
 .heading{
     text-align: left;
-    border-bottom: 1px solid white;
-    width:95%;
+    /* border-bottom: 1px solid white;
+    width:200px; */
     margin:0px auto 10px 5px;
+}
+h3{
+    width: max-content;
 }

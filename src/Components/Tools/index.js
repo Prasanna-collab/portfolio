@@ -4,7 +4,7 @@ import classes from "./Tools.module.css";
 const Tools = () => {
   return (
     <div>
-      <h3 className={classes.heading}>TOOLS</h3>
+      <h3 className={classes.heading} style={{borderBottom:"1px solid white"}}>TOOLS</h3>
       <div className={classes.mother}>
         <div className={classes.icons}>
           <div>

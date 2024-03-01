@@ -28,13 +28,14 @@ h5,h3{
     color:#fbeaeb;
 }
 h3{
-    margin-left:10px
+    margin-left:10px;
+    width:max-content;
 
 }
 .heading{
     text-align: left;
-    border-bottom: 1px solid white;
-    width:70px;
+    /* border-bottom: 1px solid white;
+    width:70px; */
 }
 .mybtn{
     position:relative;

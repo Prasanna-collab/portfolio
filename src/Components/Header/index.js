@@ -2,12 +2,12 @@ import React, { useState, useEffect, useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import classes from "./Header.module.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 import Profile from "../Profile";
 import { contextData } from "../../ContextProvider/ContextProvider";
 
 const Header = () => {
-  const { data, setData } = useContext(contextData);
+  const {setData } = useContext(contextData);
 
   const [show, setShow] = useState(true);
   const [state, setState] = useState({
@@ -37,6 +37,7 @@ const Header = () => {
     return () => {
       window.removeEventListener("resize", updateDimensions);
     };
+    // eslint-disable-next-line
   }, [state.width]);
 
   const handleClick = (e) => {

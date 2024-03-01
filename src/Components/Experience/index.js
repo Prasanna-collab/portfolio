@@ -9,10 +9,10 @@ const Experience = () => {
   const { data } = useContext(contextData);
   return (
     <div style={{ marginTop: data.margin, color: "#fbeaeb" }}>
-      <h3 style={{ color: "#faeaeb" }} className={classes.heading}>
+      <h3 style={{ color: "#faeaeb",borderBottom: "1px solid white" }} className={classes.heading}>
         Experience
       </h3>
-      <h3 style={{ borderTop: "1px solid white", width: "70px" }}></h3>
+       {/* <span style={{ width: "70px" }}></span> */}
       <div className={classes.column}>
         <div className={classes.myexp}>
           <div className={classes.logo}>

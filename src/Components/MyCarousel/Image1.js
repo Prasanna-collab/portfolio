@@ -5,7 +5,7 @@ import "./Image1.css";
 const Image1 = () => {
   return (
     <>
-      <img src={Photo1} alt="My Photo" className="image1" />
+      <img src={Photo1} alt="me1" className="me1" />
     </>
   );
 };

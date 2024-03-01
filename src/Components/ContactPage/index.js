@@ -7,7 +7,7 @@ import {
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import pointer from "../../assets/Icons/redo-arrow.png";
+// import pointer from "../../assets/Icons/redo-arrow.png";
 import email from "../../assets/Icons/paper-plane.png";
 import phone from "../../assets/Icons/phone.png";
 import Footer from "../Footer";
@@ -20,8 +20,8 @@ const ContactPage = () => {
   // console.log(githubUrl,instagramUrl, linkedInUrl);
   return (
     <div style={{ marginTop: data.margin, color: "#fbeaeb" }}>
-      <h3 className={classes.heading}>GET IN TOUCH ?</h3>
-      <h3 style={{ borderTop: "1px solid white", width: "70px" }}></h3>
+      <h3 className={classes.heading} style={{ borderBottom: "1px solid white" }}>GET IN TOUCH ?</h3>
+      {/* <p style={{ borderTop: "1px solid white", width: "70px" }}></p> */}
       <div className={classes.overall}>
         <div className={classes.container}>
           <a href={githubUrl} target="_blank" rel="noopener noreferrer">

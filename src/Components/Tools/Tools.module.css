@@ -21,6 +21,9 @@
 }
 .heading{
     text-align: left;
-    border-bottom: 1px solid white;
-    width:70px;
+    /* border-bottom: 1px solid white;
+    width:70px; */
+}
+h3{
+    width: max-content;
 }
