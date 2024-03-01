@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Skills.module.css";
+import {motion} from "framer-motion";
 
 const Skills = () => {
   return (
@@ -12,8 +13,8 @@ const Skills = () => {
               <h5>Software Skills</h5>
             </button>
             <div className={classes.skillnames}>
-              <div className={classes.name}>DataStructures & Algorithms</div>
-              <div className={classes.name}>Software Engineering</div>
+              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>DataStructures & Algorithms</motion.div>
+              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}} className={classes.name}>Software Engineering</motion.div>
             </div>
           </div>
 
@@ -22,18 +23,20 @@ const Skills = () => {
               <h5>Language</h5>
             </button>
             <div className={classes.skillnames}>
-              <div className={classes.name}>JavaScript</div>
+              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}} className={classes.name}>JavaScript</motion.div>
+              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>C#</motion.div>
             </div>
           </div>
 
           <div className={classes.children}>
             <button className={classes.mybtn}>
-              <h5>JavaScript Frameworks</h5>
+              <h5>Frameworks</h5>
             </button>{" "}
             <div className={classes.skillnames}>
-              <div className={classes.name}>React</div>
-              <div className={classes.name}>Node Js</div>
-              <div className={classes.name}>Express Js</div>
+              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>React</motion.div>
+              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>Node Js</motion.div>
+              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>Express Js</motion.div>
+              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>.Net Core 8</motion.div>
             </div>
           </div>
 
@@ -42,9 +45,9 @@ const Skills = () => {
               <h5>Styles</h5>
             </button>
             <div className={classes.skillnames}>
-              <div className={classes.name}>CSS</div>
-              <div className={classes.name}>Tailwind CSS</div>
-              <div className={classes.name}>Bootstrap</div>
+              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>CSS</motion.div>
+              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>Tailwind CSS</motion.div>
+              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>Bootstrap</motion.div>
             </div>
           </div>
 
@@ -53,8 +56,8 @@ const Skills = () => {
               <h5>Database</h5>
             </button>
             <div className={classes.skillnames}>
-              <div className={classes.name}>SQL-MySQL</div>
-              <div className={classes.name}>NoSQL-Mongo DB</div>
+              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>SQL-MySQL</motion.div>
+              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>NoSQL-Mongo DB</motion.div>
             </div>
           </div>
 
@@ -63,8 +66,8 @@ const Skills = () => {
               <h5>Cloud</h5>
             </button>
             <div className={classes.skillnames}>
-              <div className={classes.name}>Netlify</div>
-              <div className={classes.name}>Render</div>
+              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>Netlify</motion.div>
+              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>Render</motion.div>
             </div>
           </div>
         </div>
