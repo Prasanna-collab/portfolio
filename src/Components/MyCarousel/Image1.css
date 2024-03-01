@@ -1,11 +1,11 @@
-.image1{
+.me1{
     width: 320px;
     height: 320px;
     border-radius: 5px;
     /* object-fit: cover; */
 }
 @media (min-width:900px){
-    .image1{
+    .me1{
         height:400px;
         width:400px;
     }
