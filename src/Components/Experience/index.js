@@ -38,7 +38,7 @@ const Experience = () => {
         transition: { duration: 0.5, delay: 0.3, ease: [0, 0.71, 0.2, 1.01] },
       }}
       exit={{ opacity: 0 }}
-      className="min-h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white px-5 md:px-10 py-14 2xl:container mx-auto leading-normal "
+      className="min-h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white px-5 md:px-10 py-10  2xl:container mx-auto leading-normal "
     >
       <h3 className="text-2xl font-bold mb-8">Experience</h3>
       <div className="flex flex-col gap-8">

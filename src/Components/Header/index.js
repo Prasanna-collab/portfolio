@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { contextData } from "../../ContextProvider/ContextProvider";
 import Logo from "../../assets/Icons/logo.png"; // Assuming you have a Logo component
@@ -42,12 +42,12 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-gray-800 text-white shadow-md flex items-center p-2 z-20">
+    <header className=" sticky top-0 bg-gray-800 text-white shadow-md flex items-center p-2 z-20">
       <div className="flex items-center justify-between w-full max-w-screen-xl mx-auto">
         <Link to="/" className="flex items-center">
           <img src={Logo} alt="Prasanna Developer" className="w-12 h-12 rounded-xl" />
         </Link>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center justify-stretch gap-4">
           {isMobile && (
             <FontAwesomeIcon
               icon={faBars}

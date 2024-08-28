@@ -16,12 +16,12 @@ const tools = [
 const Tools = () => {
   return (
     <>
-      <h3 className="text-2xl text-gray-200 font-bold mb-4">Tools</h3>
+      <h3 className="text-2xl text-gray-200 font-bold mb-2">Tools</h3>
       <div className="flex flex-wrap justify-center gap-6 md:justify-start">
         {tools.map((tool, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center w-20 h-20 rounded-full border border-gray-300 shadow-md bg-white p-2 transition-transform transform hover:scale-110"
+            className="flex flex-col items-center justify-center w-20 h-20 rounded-full border border-gray-300 shadow-md bg-white px-2 transition-transform transform hover:scale-110"
           >
             <img
               src={`https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/${tool.name
@@ -30,7 +30,7 @@ const Tools = () => {
               alt={tool.name}
               className="w-6 h-6"
             />
-            <p className="mt-2 text-xs text-center text-gray-700 font-semibold">
+            <p className=" text-xs text-center text-gray-700 font-semibold">
               {tool.name}
             </p>
           </div>

@@ -36,7 +36,7 @@ const Body = () => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5, delay: 0.3, ease: [0, 0.71, 0.2, 1.01] }}
-        className={`mt-${data.margin} bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white px-5 md:px-10 py-10 2xl:container mx-auto leading-normal`}
+        className={`mt-${data.margin} bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white px-5 md:px-10 2xl:container mx-auto leading-normal`}
       >
         <div
           className="flex flex-col justify-center items-center gap-10
@@ -90,9 +90,11 @@ const Body = () => {
         </div>
 
         {/* Skills and Tools Section */}
-        <div className="flex flex-col-reverse lg:flex-row justify-start items-baseline gap-10 mt-10">
+        <div className="flex flex-col justify-start items-baseline gap-10 mt-10">
           <div className="flex flex-col gap-6 w-full">
             <Skills />
+          </div>
+          <div className="flex flex-col gap-6 w-full">
             <Tools />
           </div>
         </div>
