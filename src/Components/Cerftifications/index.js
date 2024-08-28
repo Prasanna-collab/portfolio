@@ -1,50 +1,50 @@
 import React from "react";
-import classes from "./Certifications.module.css";
-// import next from "../../assets/Icons/next.png";
-import Next from "../Utilities/NextButton/Next";
 import { Link } from "react-router-dom";
+import Next from "../Utilities/NextButton/Next";
+import { motion } from "framer-motion";
+
+const certifications = [
+  {
+    title: "HTML, CSS, JavaScript",
+    link: "https://alison.com/certification/check/$2y$10$s03cZnCXmHVh6iojj9olYuzPqaFuTT6zPS31mFGyMPfQmOcqMUmVe",
+  },
+  {
+    title: "React Js",
+    link: "https://www.udemy.com/certificate/UC-8bb7b0eb-bee0-4870-9017-d160d04d6270/",
+  },
+  {
+    title: "Node Js, Mongo DB",
+    link: "https://www.udemy.com/certificate/UC-180b21a6-6349-4c3f-a77c-49b6b9e4960d/",
+  },
+  {
+    title: "Tailwind CSS",
+    link: "https://www.udemy.com/certificate/UC-21bd232c-959e-4431-88ac-0ba2b1354cf0/",
+  },
+  {
+    title: "Basics of Web",
+    link: "https://www.udemy.com/certificate/UC-21bd232c-959e-4431-88ac-0ba2b1354cf0/",
+  },
+];
 
 const Certifications = () => {
   return (
-    <div>
-      <h3 className={classes.heading} style={{borderBottom: "1px solid white"}}>Certifications </h3>
-      <div className={classes.grid}>
-        <div className={classes["grid-item"]}>
-          <span style={{ color: "#202124" }}>HTML, CSS, JavaScript</span>
-
-          <Link to="https://alison.com/certification/check/$2y$10$s03cZnCXmHVh6iojj9olYuzPqaFuTT6zPS31mFGyMPfQmOcqMUmVe">
-            <Next />
-          </Link>
-        </div>
-        <div className={classes["grid-item"]}>
-          <span style={{ color: "#202124" }}>React Js</span>
-
-          <Link to="https://www.udemy.com/certificate/UC-8bb7b0eb-bee0-4870-9017-d160d04d6270/">
-            {" "}
-            <Next />
-          </Link>
-        </div>
-        <div className={classes["grid-item"]}>
-          <span style={{ color: "#202124" }}>Node Js, Mongo DB</span>
-
-          <Link to="https://www.udemy.com/certificate/UC-180b21a6-6349-4c3f-a77c-49b6b9e4960d/">
-            <Next />
-          </Link>
-        </div>
-        <div className={classes["grid-item"]}>
-          <span style={{ color: "#202124" }}>Tailwind CSS</span>
-
-          <Link to=" https://www.udemy.com/certificate/UC-21bd232c-959e-4431-88ac-0ba2b1354cf0/">
-            <Next />
-          </Link>
-        </div>
-        <div className={classes["grid-item"]}>
-          <span style={{ color: "#202124" }}>Basics of Web</span>
-
-          <Link to="https://www.udemy.com/certificate/UC-21bd232c-959e-4431-88ac-0ba2b1354cf0/">
-            <Next />
-          </Link>
-        </div>
+    <div className=" text-white my-6">
+      <h3 className="text-2xl font-bold mb-8 pb-2">
+        Certifications
+      </h3>
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {certifications.map((cert, index) => (
+          <motion.div
+            key={index}
+            className="bg-gray-800 text-gray-200 rounded-lg shadow-lg p-6 flex flex-col items-center justify-between transition-transform transform hover:scale-105"
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            <span className="text-lg font-semibold mb-4">{cert.title}</span>
+            <Link to={cert.link}>
+              <Next />
+            </Link>
+          </motion.div>
+        ))}
       </div>
     </div>
   );

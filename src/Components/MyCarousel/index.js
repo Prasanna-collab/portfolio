@@ -1,23 +1,47 @@
-import { Carousel } from "react-bootstrap";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination, EffectFade } from "swiper/modules";
 import Image1 from "./Image1";
 import Image2 from "./Image2";
-import classes from "./MyCarousel.module.css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
+const Carousel = () => {
+  const slides = [
+    { id: 1, image: <Image1/> },
+    { id: 2, image: <Image2/> },
+  ];
 
-function MyCarousel(props) {
   return (
-    <div className={classes.mother} style={{ margin: props.margin }}>
-      <Carousel>
-        <Carousel.Item>
-          <Image1 text="First slide" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <Image2 text="Second slide" />
-        </Carousel.Item>
-      </Carousel>
-      
+    <div className="text-center">
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay, EffectFade]}
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
+        onSlideChange={(swiper) => swiper.realIndex}
+        breakpoints={{
+          1320: {
+            speed: 1500,
+          },
+          1024: {
+            speed: 1000,
+          },
+          768: {
+            speed: 500,
+          },
+        }}
+        spaceBetween={10}
+      >
+        {slides.map((slide) => (
+          <SwiperSlide
+            key={slide.id}
+            className="flex items-center justify-center p-4"
+          >
+            {slide.image}
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
-}
+};
 
-export default MyCarousel;
+export default Carousel;

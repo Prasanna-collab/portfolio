@@ -11,22 +11,21 @@ import Body from "./Components/Body";
 
 const App = () => {
   return (
-    <Router>
-      <ContextProvider>
-        <header>
-          <Header />
-        </header>
-        <Routes>
-          <Route path="/" element={<Body />} />
-          <Route path="/contact-me" element={<ContactPage />} />
-          <Route path="/my-experience" element={<Experience />} />
-          <Route path="/my-projects" element={<Projects />} />
-        </Routes>
-        {/* <footer>
-          <Footer />
-        </footer> */}
-      </ContextProvider>
-    </Router>
+    <div className="bg-gradient-to-r from-gray-800 via-gray-900 to-black">
+      <Router>
+        <ContextProvider>
+          <header>
+            <Header />
+          </header>
+          <Routes>
+            <Route path="/" element={<Body />} />
+            <Route path="/contact-me" element={<ContactPage />} />
+            <Route path="/my-experience" element={<Experience />} />
+            <Route path="/my-projects" element={<Projects />} />
+          </Routes>
+        </ContextProvider>
+      </Router>
+    </div>
   );
 };
 

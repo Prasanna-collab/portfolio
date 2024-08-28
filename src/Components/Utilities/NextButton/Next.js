@@ -1,16 +1,17 @@
 import React from "react";
-import nextButton from "../../../assets/Icons/next.png";
+import { FaArrowRight } from "react-icons/fa"; // Import an icon from react-icons
 
 const Next = () => {
   return (
-    <div style={{ color: "#202124", fontWeight: "200", fontSize: "small" }}>
-      View Certificate{"  "}
-      <img
-        src={nextButton}
-        alt="Next"
-        style={{ width: "10px", height: "10px" }}
-      />
-    </div>
+    <button
+      className="bg-blue-500 text-white px-3 py-1 rounded-lg shadow-md hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300 transition-transform duration-200 flex items-center space-x-2"
+      aria-label="View Certificate"
+    >
+      <span className="flex-shrink-0">
+        <FaArrowRight className="w-4 h-4" /> {/* Adjust icon size */}
+      </span>
+      <span className="text-sm font-medium">View</span> {/* Concise text */}
+    </button>
   );
 };
 

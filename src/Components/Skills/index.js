@@ -1,78 +1,70 @@
 import React from "react";
-import classes from "./Skills.module.css";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
+
+const skillsData = [
+  {
+    category: "Software Skills",
+    skills: ["DataStructures & Algorithms", "Software Engineering"],
+  },
+  {
+    category: "Language",
+    skills: ["JavaScript", "C#", "TypeScript"],
+  },
+  {
+    category: "Libraries & Frameworks",
+    skills: ["Next Js", "React Js", "Node Js", "Express Js", ".Net Core 8"],
+  },
+  {
+    category: "Styles",
+    skills: [
+      "CSS",
+      "Tailwind CSS",
+      "Bootstrap",
+      "Material UI",
+      "SASS",
+      "Styled Components",
+    ],
+  },
+  {
+    category: "Database",
+    skills: ["MS SQL Server", "Mongo DB"],
+  },
+  {
+    category: "Cloud",
+    skills: ["AWS", "Firebase"],
+  },
+];
 
 const Skills = () => {
   return (
-    <>
-      <div>
-        <h3 className={classes.heading} style={{borderBottom:"1px solid white"}}>SKILLS</h3>
-        <div className={classes.mother}>
-          <div className={classes.children}>
-            <button className={classes.mybtn}>
-              <h5>Software Skills</h5>
-            </button>
-            <div className={classes.skillnames}>
-              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>DataStructures & Algorithms</motion.div>
-              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}} className={classes.name}>Software Engineering</motion.div>
+    <div className="">
+      <h3 className="text-white text-2xl mb-8 font-bold">Skills</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {skillsData.map((category, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: index * 0.1 }}
+            className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow"
+          >
+            <h5 className="text-xl text-white mb-4">{category.category}</h5>
+            <div className="flex flex-wrap gap-2 justify-center">
+              {category.skills.map((skill, i) => (
+                <motion.div
+                  key={i}
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="px-4 py-2 bg-white text-black rounded-full shadow-md hover:shadow-xl transition-shadow"
+                >
+                  {skill}
+                </motion.div>
+              ))}
             </div>
-          </div>
-
-          <div className={classes.children}>
-            <button className={classes.mybtn}>
-              <h5>Language</h5>
-            </button>
-            <div className={classes.skillnames}>
-              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}} className={classes.name}>JavaScript</motion.div>
-              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>C#</motion.div>
-            </div>
-          </div>
-
-          <div className={classes.children}>
-            <button className={classes.mybtn}>
-              <h5>Frameworks</h5>
-            </button>{" "}
-            <div className={classes.skillnames}>
-              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>React</motion.div>
-              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>Node Js</motion.div>
-              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>Express Js</motion.div>
-              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>.Net Core 8</motion.div>
-            </div>
-          </div>
-
-          <div className={classes.children}>
-            <button className={classes.mybtn}>
-              <h5>Styles</h5>
-            </button>
-            <div className={classes.skillnames}>
-              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>CSS</motion.div>
-              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>Tailwind CSS</motion.div>
-              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>Bootstrap</motion.div>
-            </div>
-          </div>
-
-          <div className={classes.children}>
-            <button className={classes.mybtn}>
-              <h5>Database</h5>
-            </button>
-            <div className={classes.skillnames}>
-              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>SQL-MySQL</motion.div>
-              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>NoSQL-Mongo DB</motion.div>
-            </div>
-          </div>
-
-          <div className={classes.children}>
-            <button className={classes.mybtn}>
-              <h5>Cloud</h5>
-            </button>
-            <div className={classes.skillnames}>
-              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>Netlify</motion.div>
-              <motion.div whileHover={{scale:1.1}} transition={{bounce:0.5, type:"spring", duration:"0.2s"}}className={classes.name}>Render</motion.div>
-            </div>
-          </div>
-        </div>
+          </motion.div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

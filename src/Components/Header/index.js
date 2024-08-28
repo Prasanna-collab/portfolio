@@ -1,112 +1,122 @@
 import React, { useState, useEffect, useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import classes from "./Header.module.css";
-import { Link} from "react-router-dom";
-import Profile from "../Profile";
+import { Link } from "react-router-dom";
 import { contextData } from "../../ContextProvider/ContextProvider";
+import Logo from "../../assets/Icons/logo.png"; // Assuming you have a Logo component
 
 const Header = () => {
-  const {setData } = useContext(contextData);
-
-  const [show, setShow] = useState(true);
-  const [state, setState] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
+  const { setData } = useContext(contextData);
+  const [show, setShow] = useState(false); // Default to false to hide the menu initially
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 500);
 
   useEffect(() => {
     const updateDimensions = () => {
-      setState({ height: window.innerHeight, width: window.innerWidth });
+      const width = window.innerWidth;
+      setIsMobile(width <= 500);
       setData((prev) => ({
         ...prev,
+        width,
         height: window.innerHeight,
-        width: window.innerWidth,
       }));
-      // console.log(state);
     };
-    //event listener for updating windows dimensions on resize;
+
     window.addEventListener("resize", updateDimensions);
     updateDimensions();
-    if (state.width <= 500) {
-      setShow(true);
-    } else if (state.width > 500) {
-      setShow(true);
-    }
 
     return () => {
       window.removeEventListener("resize", updateDimensions);
     };
-    // eslint-disable-next-line
-  }, [state.width]);
+  }, [setData]);
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    setShow((prev) => !prev);
+  const handleClick = () => {
+    setShow((prev) => !prev); 
   };
 
   const handleResume = (event) => {
     event.preventDefault();
-    window.location.href =
-      "https://drive.google.com/file/d/1gNmrWq9r1iRbzdsASjcZPk4-8vVHc-V-/view?usp=drive_link";
+    window.open(
+      "https://drive.google.com/file/d/1I-9opHjCCQFkSN9ZPVaAQp8J8OHm45AW/view?usp=drivesdk",
+      "_blank"
+    );
   };
+
   return (
-    <div className={classes.mother}>
-      {show ? <Profile /> : ""}
-      {state.width <= 500 ? (
-        <>
-          <div style={{ textAlign: "right" }} className={classes.header}>
-            {show ? (
-              <>
-                <FontAwesomeIcon
-                  icon={faBars}
-                  onClick={handleClick}
-                  className={classes.icon}
-                />
-              </>
-            ) : (
-              <>
-                {" "}
-                <FontAwesomeIcon
-                  icon={faXmark}
-                  onClick={handleClick}
-                  className={classes.icon}
-                />
-                <div className={classes.route}>
-                  <Link to={"/"}>
-                    <button>Home</button>
-                  </Link>
-                  <Link to={"my-experience"}>
-                    <button>Experience</button>
-                  </Link>
-
-                  <button onClick={handleResume}>My resume</button>
-                  <Link to={"contact-me"}>
-                    <button>Contact Me</button>
-                  </Link>
-                </div>
-              </>
-            )}
-          </div>
-        </>
-      ) : (
-        <div>
-          <div className={classes.route}>
-            <Link to={"/"}>
-              <button>Home</button>
-            </Link>
-            <Link to={"my-experience"}>
-              <button>Experience</button>
-            </Link>
-
-            <button onClick={handleResume}>My resume</button>
-            <Link to={"contact-me"}>
-              <button>Contact Me</button>
-            </Link>
-          </div>
+    <header className="fixed top-0 left-0 right-0 bg-gray-800 text-white shadow-md flex items-center p-2 z-20">
+      <div className="flex items-center justify-between w-full max-w-screen-xl mx-auto">
+        <Link to="/" className="flex items-center">
+          <img src={Logo} alt="Prasanna Developer" className="w-12 h-12 rounded-xl" />
+        </Link>
+        <div className="flex items-center gap-4">
+          {isMobile && (
+            <FontAwesomeIcon
+              icon={faBars}
+              onClick={handleClick}
+              className="text-3xl cursor-pointer"
+            />
+          )}
+          {isMobile && show && (
+            <div className="fixed inset-0 bg-gray-800 bg-opacity-90 flex flex-col items-center justify-center gap-4 p-6 z-30">
+              <Link
+                to="/"
+                className="text-base font-semibold text-red-500 opacity-full shadow-lg"
+                onClick={handleClick}
+              >
+                Home
+              </Link>
+              <Link
+                to="my-experience"
+                className="text-base font-semibold text-red-500 opacity-full shadow-lg"
+                onClick={handleClick}
+              >
+                Experience
+              </Link>
+              <button
+                onClick={handleResume}
+                className="text-base font-semibold text-red-500 opacity-full shadow-lg"
+              >
+                My Resume
+              </button>
+              <Link
+                to="contact-me"
+                className="text-base font-semibold text-red-500 opacity-full shadow-lg"
+                onClick={handleClick}
+              >
+                Contact Me
+              </Link>
+            </div>
+          )}
+          {!isMobile && (
+            <div className="flex gap-4">
+              <Link
+                to="/"
+                className="text-base font-semibold hover:text-gray-400"
+              >
+                Home
+              </Link>
+              <Link
+                to="my-experience"
+                className="text-base font-semibold hover:text-gray-400"
+              >
+                Experience
+              </Link>
+              <button
+                onClick={handleResume}
+                className="text-base font-semibold hover:text-gray-400"
+              >
+                My Resume
+              </button>
+              <Link
+                to="contact-me"
+                className="text-base font-semibold hover:text-gray-400"
+              >
+                Contact Me
+              </Link>
+            </div>
+          )}
         </div>
-      )}
-    </div>
+      </div>
+    </header>
   );
 };
 
