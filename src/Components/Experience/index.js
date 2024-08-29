@@ -67,7 +67,7 @@ const Experience = () => {
           </motion.div>
         ))}
       </div>
-      <div className="mt-16">
+      <div className="mt-16 mb-24">
         <Certifications />
       </div>
       <div className="fixed bottom-0 left-0 right-0 bg-gray-800">
