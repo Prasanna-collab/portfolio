@@ -14,10 +14,11 @@ const SocialMedia = () => {
   return (
     <div className="flex items-center justify-center gap-6 mt-6 text-white">
       <a
+
         href={githubUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-all duration-300 transform hover:scale-110 shadow-lg"
+        className="p-3 rounded-full cursor-pointer bg-gray-800 hover:bg-gray-700 transition-all duration-300 transform hover:scale-110 shadow-lg"
       >
         <FontAwesomeIcon className="text-xl" icon={faGithub} />
       </a>
@@ -25,7 +26,7 @@ const SocialMedia = () => {
         href={instagramUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-3 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:opacity-90 transition-all duration-300 transform hover:scale-110 shadow-lg"
+        className="p-3 rounded-full bg-gradient-to-r cursor-pointer from-pink-500 via-red-500 to-yellow-500 hover:opacity-90 transition-all duration-300 transform hover:scale-110 shadow-lg"
       >
         <FontAwesomeIcon className="text-xl" icon={faInstagram} />
       </a>
@@ -33,7 +34,7 @@ const SocialMedia = () => {
         href={linkedInUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-3 rounded-full bg-blue-700 hover:bg-blue-600 transition-all duration-300 transform hover:scale-110 shadow-lg"
+        className="p-3 rounded-full bg-blue-700 cursor-pointer hover:bg-blue-600 transition-all duration-300 transform hover:scale-110 shadow-lg"
       >
         <FontAwesomeIcon className="text-xl" icon={faLinkedin} />
       </a>

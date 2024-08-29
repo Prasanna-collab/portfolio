@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3, ease: [0, 0.71, 0.2, 1.01] }}
         className=" h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white px-5 md:px-10 py-10 2xl:container mx-auto leading-normal"
@@ -25,7 +25,7 @@ const Projects = () => {
               y: [100, 0],
               rotate: [0, 5, 10, -10, 5, 0], // Smoothly oscillating rotation for dynamic effect
               transition: {
-                duration: 10,
+                duration: 3,
                 ease: "easeInOut",
                 repeat: Infinity,
                 repeatType: "reverse",
@@ -37,7 +37,7 @@ const Projects = () => {
           />
         </div>
       </motion.div>
-      <div className="">
+      <div className="relative w-full">
         <Footer />
       </div>
     </>
