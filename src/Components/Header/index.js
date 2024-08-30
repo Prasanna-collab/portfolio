@@ -52,7 +52,7 @@ const Header = () => {
 
   return (
     <header className=" sticky top-0 bg-gray-800 text-white shadow-md flex items-center p-2 z-20">
-      <div className="flex items-center justify-between w-full max-w-screen-xl mx-auto">
+      <div className="flex items-center justify-between w-full max-w-screen-2xl mx-auto">
         <Link to="/" className="flex items-center">
           <img
             src={Logo}

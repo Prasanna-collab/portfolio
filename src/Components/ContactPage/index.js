@@ -12,15 +12,12 @@ const ContactPage = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5, ease: [0, 0.71, 0.2, 1.01] }}
         className="min-h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black
-        
-         text-white px-5 md:px-10 py-10 2xl:container mx-auto leading-normal
-          "
+         text-white px-5 md:px-10 py-10 2xl:container mx-auto leading-normal"
       >
         <div>
           <h3 className="text-2xl font-bold mb-8">Get In Touch</h3>
           <div className="flex flex-col items-center gap-8">
             <SocialMedia />
-
             <div className="flex flex-col gap-6">
               <div className="flex items-center gap-4 border-l-2 border-white pl-4 py-2">
                 <img src={email} alt="Email" className="w-8 h-8" />

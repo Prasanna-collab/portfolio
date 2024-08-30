@@ -49,7 +49,7 @@ const Skills = () => {
             className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl"
           >
             <h5 className="text-lg text-white mb-4">{category.category}</h5>
-            <div className="flex flex-wrap gap-2 justify-center">
+            <div className="flex flex-wrap gap-2 justify-start">
               {category.skills.map((skill, i) => (
                 <motion.div
                   key={i}
